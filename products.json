@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "name": "Eko-Sprey İtfaiye Aracı",
+    "description": "Gerçek su püskürtme özelliği ve çevre dostu materyalleriyle yeni nesil oyun deneyimi.",
+    "price": "849,00",
+    "oldPrice": "1.100,00",
+    "image": "catalog/kamyon.png",
+    "isFeatured": true
+  },
+  {
+    "id": "2",
+    "name": "Yaratıcı Bloklar",
+    "description": "",
+    "price": "399,00",
+    "oldPrice": "",
+    "image": "catalog/aile.png",
+    "isFeatured": false
+  },
+  {
+    "id": "3",
+    "name": "Mini Kaykay Seti",
+    "description": "",
+    "price": "249,00",
+    "oldPrice": "",
+    "image": "catalog/kaykay.png",
+    "isFeatured": false
+  }
+]
