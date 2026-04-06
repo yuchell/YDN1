@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>YDN Oyuncak - Structured Joy for Every Child</title>
     <meta name="description" content="YDN Oyuncak ve Kırtasiye. Çocukların hayal dünyasını gerçeğe dönüştüren, kaliteli ve güvenli oyun ve kırtasiye ürünleri. YDN, YDN kırtasiye ve YDN Oyuncak." />
-    <meta name="keywords" content="YDN, YDN kırtasiye, YDN Oyuncak, eğitici oyuncaklar, oyuncak, kırtasiye malzemeleri, uzaktan kumandalı araçlar" />
+    <meta name="keywords" content="YDN, YDN kırtasiye, YDN Oyuncak, eğitici oyuncaklar, puzzle, oyuncak, kırtasiye malzemeleri, uzaktan kumandalı araçlar" />
     <meta name="author" content="YDN" />
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap"
@@ -120,25 +120,35 @@
 
 <body
     class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
-    <!-- Floating WhatsApp Button -->
-    <a class="fixed bottom-6 right-6 z-[60] bg-primary text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group"
-        href="https://wa.me/905519367915" target="_blank">
-        <svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
-            <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
-            </path>
-        </svg>
-        <span
-            class="absolute right-full mr-4 bg-white text-on-background px-3 py-1 rounded-lg text-sm font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">WhatsApp
-            Destek</span>
-    </a>
-    <!-- TopNavBar -->
+    
+    <!-- Floating Contact Buttons -->
+    <div class="fixed bottom-6 right-6 z-[60] flex flex-col gap-3">
+        <!-- WhatsApp Button -->
+        <a class="bg-gradient-to-br from-green-400 to-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group"
+            href="https://wa.me/905519367915" target="_blank">
+            <svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span class="absolute right-full mr-4 bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">WhatsApp Destek</span>
+        </a>
+
+        <!-- Email Button -->
+        <a class="bg-gradient-to-br from-orange-400 to-orange-600 text-white p-4 rounded-full shadow-2xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group"
+            href="mailto:info@ydnoyuncak.com">
+            <svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span class="absolute right-full mr-4 bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">E-mail Gönder</span>
+        </a>
+    </div>
+    
+    <!-- Main Content -->
     <header
         class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm transition-colors duration-300 shadow-[0_20px_40px_rgba(122,65,0,0.06)]">
-        <nav class="flex justify-between items-center w-full px-4 md:px-8 py-4 max-w-7xl mx-auto">
+        <nav class="flex justify-between items-center w-full px-4 md:px-8 py-2 max-w-7xl mx-auto">
             <div class="text-2xl font-black text-primary tracking-tighter font-headline">
-                <img alt="YDN Oyuncak Logo" class="h-16 md:h-20 w-auto object-contain image-render-auto"
-                    src="https://lh3.googleusercontent.com/aida/ADBb0uiKj1fQEeQf-SJlOTKhSo2H24N-xqwhGemMzsiMujdTIHsHtJVO79MOk5QIXXyiORYH4xcJlEhpmKr7Oqd50ExpGLa_00HLzSOtv5dc-h0l7H_0l0_7hT4Z7LJ3VszyGhUWn_XmBqDsGFgVUVXuHt9JLxx0wQ1yCIFsZTpmvBj_dUXK1hN-NGymmkHLJ_GTDc_eUVmEUSDzXZV7p7kj616Jo1_PkTS6PAk9JJc_s1zAkAsaXeKKnseIhfVzsKUGjz2UnD_sMst3ug" />
+                <img alt="YDN Oyuncak Logo" class="h-20 md:h-28 w-auto object-contain image-render-auto"
+                     src="catalog/logo.png" />
             </div>
             <!-- Desktop Nav -->
             <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
@@ -158,6 +168,20 @@
                 <button class="p-2 text-secondary hover:scale-95 transition-transform duration-200">
                     <span class="material-symbols-outlined" data-icon="favorite">favorite</span>
                 </button>
+                <!-- Instagram Button -->
+                <a aria-label="Instagram" class="p-2 text-primary hover:scale-110 transition-transform hidden sm:block" 
+                   href="https://www.instagram.com/ydnkirtasiye/" target="_blank">
+                    <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path>
+                    </svg>
+                </a>
+                <!-- WhatsApp Button -->
+                <a aria-label="WhatsApp" class="p-2 text-primary hover:scale-110 transition-transform hidden sm:block" 
+                   href="https://wa.me/905519367915" target="_blank">
+                    <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+                    </svg>
+                </a>
                 <!-- Mobile Menu Button -->
                 <button class="md:hidden p-2 text-secondary" id="menu-btn">
                     <span class="material-symbols-outlined">menu</span>
@@ -170,6 +194,20 @@
             <a class="text-primary" href="#">Kategoriler</a>
             <a class="text-secondary" href="https://www.hepsiburada.com/magaza/ydn-kirtasiye?tab=advantageproducts&filtreler=VariantList.VariantListing.TagList.avantajli%E2%82%AC2dfiyatlar%3Aavantajli%E2%82%AC2dfiyatlar" target="_blank">Kampanyalar</a>
             <a class="text-secondary" href="#">Hakkımızda</a>
+            <div class="border-t border-surface-container pt-4 mt-2 flex gap-4">
+                <a aria-label="Instagram" class="text-primary hover:scale-110 transition-transform" 
+                   href="https://www.instagram.com/ydnkirtasiye/" target="_blank">
+                    <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path>
+                    </svg>
+                </a>
+                <a aria-label="WhatsApp" class="text-primary hover:scale-110 transition-transform" 
+                   href="https://wa.me/905519367915" target="_blank">
+                    <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+                    </svg>
+                </a>
+            </div>
         </div>
     </header>
     <main class="pt-20 md:pt-24 overflow-x-hidden">
@@ -179,7 +217,7 @@
                 <div class="z-10 text-center lg:text-left">
                     <h1
                         class="text-4xl sm:text-6xl md:text-7xl font-headline font-black text-on-background leading-tight tracking-tight mb-6">
-                        Oyun Başlasın! <br />
+                        Oyun Başlasın! Çocuklar Gülsün<br />
                         <span class="text-primary">En Eğlenceli Oyuncaklar YDN'de</span>
                     </h1>
                     <p
@@ -204,7 +242,7 @@
                     </div>
                     <img alt="YDN Oyuncak RC Car"
                         class="w-full h-auto drop-shadow-2xl hover:rotate-2 transition-transform duration-500 rounded-2xl"
-                        src="https://lh3.googleusercontent.com/aida/ADBb0ugJYaN1q0ZugkSn5Q8tJkuh6_8_YYeJrvfA8Fpph-KM6BY_b7MODZhGVfw_ir-SQXmGS8x7-E54mQIqC7HIgrbnQ1K-4vUAFOLq4gpa4MUaRAkTl-KUOsX4QlxT-I1JW5nU5YrN-208461g-mLd5QQY9XN_MLXOE8nf92ITs9wEEyzivOd10fj0p5Cmg3hP-Is6Ed88WOUGIztDe00qNX2dRPRXxXTD5X2Sn8_BYeDB34bdhKP8vtz1GVw6e0V9g45i8yNWErY5Sg" />
+                        src="catalog/aile.png"
                     <div
                         class="absolute top-4 right-4 bg-primary text-on-primary joy-badge px-4 md:px-6 py-2 md:py-4 rounded-full font-black text-lg md:text-xl shadow-lg">
                         %20 İNDİRİM!
@@ -250,7 +288,7 @@
                                 class="w-4/5 h-auto object-contain group-hover:scale-110 transition-transform duration-500"
                                 src="catalog/kaykay.png" />
                         </div>
-                        <h3 class="text-xl md:text-2xl font-headline font-bold mb-2">Dış Mekan Oyuncakları</h3>
+                        <h3 class="text-xl md:text-2xl font-headline font-bold mb-2">KayKay & Paten</h3>
                         <p class="text-on-surface-variant mb-6 text-sm md:text-base">Parkta ve bahçede eğlencenin tadını
                             çıkarın.</p>
                         <button
@@ -267,7 +305,7 @@
                                 class="w-4/5 h-auto object-contain group-hover:scale-110 transition-transform duration-500"
                                 src="catalog/aile.png" />
                         </div>
-                        <h3 class="text-xl md:text-2xl font-headline font-bold mb-2">Eğitici Oyuncaklar</h3>
+                        <h3 class="text-xl md:text-2xl font-headline font-bold mb-2">Eğitici Oyuncaklar ve Puzzlelar</h3>
                         <p class="text-on-surface-variant mb-6 text-sm md:text-base">Öğrenmeyi eğlenceli hale getiren
                             setler.</p>
                         <button
@@ -307,24 +345,8 @@
             </div>
             </div>
         </section>
-        <!-- New Arrivals -->
-        <section class="px-6 md:px-8 py-16 md:py-24">
-            <div class="max-w-7xl mx-auto">
-                <div class="flex flex-col items-center text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-headline font-black mb-4">Yeni Gelenler</h2>
-                    <div class="w-16 md:w-24 h-2 bg-primary rounded-full"></div>
-                </div>
-                <!-- Dynamic Content Container -->
-                <div class="grid lg:grid-cols-12 gap-8" id="new-arrivals-container">
-                    <div class="lg:col-span-12 text-center text-outline min-h-[300px] flex items-center justify-center">
-                        <!-- Loader that is shown until JS loads -->
-                        <div class="animate-pulse flex items-center gap-2 font-bold font-headline text-lg">Yükleniyor...
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
+     
+ 
         <!-- Trust Section -->
         <section class="px-6 md:px-8 py-16 md:py-24 bg-surface-container-lowest rounded-t-[3rem] md:rounded-t-[4rem]">
             <div class="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-12 text-center">
@@ -335,8 +357,8 @@
                             data-icon="verified_user">verified_user</span>
                     </div>
                     <h3 class="text-xl md:text-2xl font-headline font-bold mb-4">Üstün Kalite</h3>
-                    <p class="text-on-surface-variant text-sm md:text-base">Tüm ürünlerimiz Avrupa standartlarında
-                        kalite testlerinden başarıyla geçmiştir.</p>
+                    <p class="text-on-surface-variant text-sm md:text-base">Tüm ürünlerimiz Kalite standartlarında
+                          testlerinden başarıyla geçmiştir.</p>
                 </div>
                 <div class="flex flex-col items-center">
                     <div
@@ -359,6 +381,21 @@
                         kargolanır ve kapınıza kadar ulaştırılır.</p>
                 </div>
             </div>
+			<div id="cookie-banner" style="position:fixed; bottom:0; left:0; right:0; background:#000; color:#fff; padding:15px; text-align:center; z-index:9999;">
+  Bu site çerezler kullanır. Devam ederek kabul etmiş olursunuz.
+  <button onclick="acceptCookies()" style="margin-left:10px; padding:5px 10px;">Kabul Et</button>
+</div>
+
+<script>
+function acceptCookies() {
+  localStorage.setItem("cookieAccepted", "true");
+  document.getElementById("cookie-banner").style.display = "none";
+}
+
+if(localStorage.getItem("cookieAccepted")) {
+  document.getElementById("cookie-banner").style.display = "none";
+}
+</script>
         </section>
     </main>
     <!-- Footer -->
@@ -366,36 +403,38 @@
         class="w-full px-6 md:px-12 py-12 md:py-16 flex flex-col items-center gap-8 bg-surface-container rounded-t-[2rem] md:rounded-t-[3rem] mt-12">
         <div class="text-2xl font-black text-primary font-headline">
             <img alt="YDN Oyuncak Logo" class="h-24 md:h-32 w-auto object-contain mb-4"
-                src="https://lh3.googleusercontent.com/aida/ADBb0uiKj1fQEeQf-SJlOTKhSo2H24N-xqwhGemMzsiMujdTIHsHtJVO79MOk5QIXXyiORYH4xcJlEhpmKr7Oqd50ExpGLa_00HLzSOtv5dc-h0l7H_0l0_7hT4Z7LJ3VszyGhUWn_XmBqDsGFgVUVXuHt9JLxx0wQ1yCIFsZTpmvBj_dUXK1hN-NGymmkHLJ_GTDc_eUVmEUSDzXZV7p7kj616Jo1_PkTS6PAk9JJc_s1zAkAsaXeKKnseIhfVzsKUGjz2UnD_sMst3ug" />
+                src="catalog/logo.png" />
         </div>
         <div class="flex flex-wrap justify-center gap-x-8 md:gap-x-12 gap-y-4 text-sm font-bold">
-            <a class="text-on-background/70 hover:underline hover:text-primary transition-colors" href="#">Gizlilik
+            <a class="text-on-background/70 hover:underline hover:text-primary transition-colors" href="gizlilik.html">Gizlilik
                 Politikası</a>
             <a class="text-on-background/70 hover:underline hover:text-primary transition-colors" href="#">Teslimat
                 Koşulları</a>
-            <a class="text-on-background/70 hover:underline hover:text-primary transition-colors" href="#">İletişim</a>
+            <a href="iletisim.html" class="text-on-background/70 hover:underline hover:text-primary transition-colors">İletişim</a>
             <a class="text-on-background/70 hover:underline hover:text-primary transition-colors" href="#">Sıkça Sorulan
                 Sorular</a>
         </div>
         <!-- Social Icons -->
         <div class="flex gap-6 items-center">
-            <a aria-label="Instagram" class="text-primary hover:scale-110 transition-transform" href="https://www.instagram.com/ydnkirtasiye/" target="_blank">
-                <svg class="w-7 h-7 fill-current" viewbox="0 0 24 24">
-                    <path
-                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z">
-                    </path>
-                </svg>
+            <a aria-label="Instagram" class="group" href="https://www.instagram.com/ydnkirtasiye/" target="_blank">
+                <div class="bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 p-3 rounded-full hover:scale-110 transition-transform shadow-lg shadow-pink-500/30">
+                    <svg class="w-6 h-6 fill-white" viewbox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                    </svg>
+                </div>
+                <span class="text-xs font-semibold text-slate-500 mt-1 block group-hover:text-pink-500 transition-colors">Instagram</span>
             </a>
-            <a aria-label="WhatsApp" class="text-primary hover:scale-110 transition-transform" href="https://wa.me/905519367915" target="_blank">
-                <svg class="w-7 h-7 fill-current" viewbox="0 0 24 24">
-                    <path
-                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
-                    </path>
-                </svg>
+            <a aria-label="WhatsApp" class="group" href="https://wa.me/905519367915" target="_blank">
+                <div class="bg-gradient-to-br from-green-400 to-green-600 p-3 rounded-full hover:scale-110 transition-transform shadow-lg shadow-green-500/30">
+                    <svg class="w-6 h-6 fill-white" viewbox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                </div>
+                <span class="text-xs font-semibold text-slate-500 mt-1 block group-hover:text-green-600 transition-colors">WhatsApp</span>
             </a>
         </div>
         <div class="text-secondary text-sm text-center font-medium">
-            © 2024 YDN Oyuncak - Structured Joy for Every Child
+            © 2026 YDN Oyuncak - Structured Joy for Every Child
         </div>
     </footer>
     <script>
@@ -423,9 +462,6 @@
                 const res = await fetch('products.json');
                 if (!res.ok) throw new Error('Network response was not ok');
                 const products = await res.json();
-
-                const container = document.getElementById('new-arrivals-container');
-                if (!container) return;
 
                 container.innerHTML = ''; // clear loading state
 
@@ -489,7 +525,7 @@
         }
 
         // Initialize products load
-        document.addEventListener('DOMContentLoaded', loadProducts);
+       // document.addEventListener('DOMContentLoaded', loadProducts);
     </script>
 </body>
 

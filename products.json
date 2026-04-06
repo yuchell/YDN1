@@ -26,4 +26,13 @@
     "image": "catalog/kaykay.png",
     "isFeatured": false
   }
+    {
+    "id": "new-arrivals-container",
+    "name": "Yeni Gelenler",
+    "description": "",
+    "price": "249,00",
+    "oldPrice": "",
+    "image": "catalog/banner.png",
+    "isFeatured": false
+  }
 ]
