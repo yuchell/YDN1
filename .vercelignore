@@ -1,0 +1,10 @@
+# Ignore large files and unnecessary directories
+node_modules
+npm-debug.log
+.git
+.gitignore
+.DS_Store
+README.md
+DESIGN.md
+screen.png
+*.md
